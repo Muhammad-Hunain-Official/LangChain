@@ -1,0 +1,29 @@
+Q: What is Python?
+A: Python is a high-level, interpreted programming language known for its simple and readable syntax.
+
+Q: What is SQL?
+A: SQL is a language used to store, retrieve, and manage data in relational databases.
+
+Q: What is Artificial Intelligence?
+A: Artificial Intelligence is the field of creating systems that can perform tasks that normally require human intelligence.
+
+Q: What is Machine Learning?
+A: Machine Learning is a branch of Artificial Intelligence that allows computers to learn patterns from data and make predictions or decisions.
+
+Q: What is Data Science?
+A: Data Science is the process of collecting, cleaning, analyzing, and interpreting data to extract useful insights.
+
+Q: What is a database?
+A: A database is an organized collection of data that can be stored, accessed, and managed efficiently.
+
+Q: What is GitHub?
+A: GitHub is a platform used to store, manage, and collaborate on software projects using Git.
+
+Q: What is RAG?
+A: RAG stands for Retrieval-Augmented Generation. It allows an AI system to retrieve relevant information from external documents before generating an answer.
+
+Q: What is an LLM?
+A: LLM stands for Large Language Model. It is an AI model trained on large amounts of text to understand and generate human-like language.
+
+Q: What is LangChain?
+A: LangChain is a framework used to build applications powered by large language models, including applications that use documents, retrieval, and RAG.
