@@ -10,7 +10,7 @@ prompt = PromptTemplate(
     input_variables = ["text"],
     )
 parser = StrOutputParser()
-loader = ("Questions.txt")
+loader = TextLoader("Questions.txt")
 docs = loader.load()
 chain = prompt | model | parser 
 print(chain.invoke({'text':docs[0].page_content}))
