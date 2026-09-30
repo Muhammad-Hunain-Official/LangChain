@@ -25,7 +25,7 @@ print("Embeddings created")
 
 vector_store = Chroma(
     embedding_function=embeddings,
-    persist_directory="chroma_db",
+    persist_directory="chroma_test_db",
     collection_name="sample",
 )
 print("API key loaded:", bool(os.getenv("GEMINI_API_KEY")))
