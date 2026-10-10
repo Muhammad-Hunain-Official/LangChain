@@ -43,3 +43,9 @@ results = vector_store.similarity_search(
 
 print("Search completed")
 print(results)
+print("Before embedding")
+
+test = embeddings.embed_query("Football is a sport")
+
+print("Embedding generated")
+print(len(test))
