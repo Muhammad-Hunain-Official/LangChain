@@ -23,7 +23,7 @@ try:
     )
 
     print("Transcript fetched successfully!")
-    print(transcript)
+    # print(transcript)
 
 except TranscriptsDisabled:
     print("Transcript is disabled for this video.")
@@ -37,7 +37,6 @@ except Exception as e:
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000,chunk_overlap=100)
 chunks = splitter.create_documents([transcript])   
-print(len(chunks))
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model="gemini-embedding-001"
@@ -45,3 +44,6 @@ embeddings = GoogleGenerativeAIEmbeddings(
 
 vector_store= FAISS.from_documents(chunks,embeddings) 
 # print(vector_store)
+
+retriever = vector_store.as_retriever(search_type= "similarity", search_kwargs={"k": 3})
+retriever.invoke("What is the main topic of the video?")
